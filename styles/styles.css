@@ -1,0 +1,271 @@
+@media only screen and (min-width:1200px) {
+	.container {
+		max-width: 1315px;
+	}
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #7A7A7A;
+	font-size: 16px;
+	line-height: 1.75;
+}
+
+/* modificators */
+.img--bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+}
+
+/* promo start */
+.promo {
+	position: relative;
+	background: #E3F5F2;
+	padding: 50px 0 51px 0;
+
+}
+
+@media only screen and (min-width:768px) {
+	.promo {
+		padding: 153px 0 158px 0;
+	}
+}
+
+
+.promo__img {
+	position: absolute;
+	width: 10%;
+	height: 100%;
+	top: 0;
+	right: 0;
+}
+
+@media only screen and (min-width:576px) {
+	.promo__img {
+		width: 30%;
+	}
+}
+
+@media only screen and (min-width:992px) {
+	.promo__img {
+		width: 50%;
+	}
+}
+
+.heading {
+	max-width: 258px;
+}
+
+@media only screen and (min-width:768px) {
+	.heading {
+		max-width: 305px;
+	}
+}
+
+.heading__pre-title {
+	font-size: 14px;
+	line-height: 20px;
+	text-transform: uppercase;
+	color: #999999;
+	margin-bottom: 0;
+}
+
+.heading__title {
+	font-size: 26px;
+	line-height: 38px;
+	color: #000;
+	letter-spacing: -1.27273px;
+	margin-top: 7px;
+	margin-bottom: 0;
+}
+
+@media only screen and (min-width:576px) {
+	.heading__title {
+		font-size: 30px;
+	}
+}
+
+.heading__text:first-of-type {
+	margin-top: 29px;
+}
+
+.heading__text:last-of-type {
+	margin-bottom: 0;
+}
+
+.form {
+	background: rgba(28, 28, 28, 0.9);
+	border-radius: 10px;
+	padding: 40px 23px 35px 22px;
+	margin-top: 40px;
+}
+
+@media only screen and (min-width:768px) {
+	.form {
+		margin-top: 0;
+	}
+}
+
+@media only screen and (min-width:992px) {
+	.form {
+		padding: 78px 53px 71px 59px;
+	}
+}
+
+.form__field {
+	display: block;
+	width: 100%;
+	height: 45px;
+	padding: 0 25px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	outline: none;
+	transition: border 0.3s;
+	border: 1px solid #e2e2e2;
+}
+
+
+.form__field::placeholder {
+	color: #1C1C1C;
+}
+
+.form__field:focus {
+	border: 1px solid #333;
+}
+
+.form__submit {
+	font-weight: 700;
+	background: #0AD9C6;
+	border-radius: 6px;
+	border: none;
+	padding: 0 20px;
+	height: 50px;
+	width: 100%;
+
+}
+
+.form__text {
+	display: inline-block;
+	margin-top: 15px;
+	font-weight: 300;
+	font-size: 13px;
+	line-height: 23px;
+}
+
+/* promo end */
+
+/* feautures start */
+.features {
+	padding: 40px 0;
+}
+
+@media only screen and (min-width:768px) {
+	.features {
+		padding: 70px 0;
+	}
+}
+
+.feature-item:not(:last-of-type) {
+	margin-bottom: 30px;
+}
+
+@media only screen and (min-width:576px) {
+	.feature-item:not(:last-of-type) {
+		margin-bottom: 50px;
+	}
+}
+
+.feature-item:nth-of-type(odd) .feature-item__details {
+	margin-left: 0;
+}
+
+@media only screen and (min-width:768px) {
+	.feature-item:nth-of-type(odd) .feature-item__details {
+		margin-left: 22px;
+	}
+}
+
+@media only screen and (min-width:992px) {
+	.feature-item:nth-of-type(odd) .feature-item__details {
+		margin-left: 40px;
+	}
+}
+
+.feature-item:nth-of-type(even) .feature-item__details {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+@media only screen and (min-width:768px) {
+	.feature-item:nth-of-type(even) .feature-item__details {
+		margin-left: 22px;
+		margin-right: 40px;
+	}
+}
+
+@media only screen and (min-width:992px) {
+	.feature-item:nth-of-type(even) .feature-item__details {
+		margin-left: 0;
+		margin-right: 40px;
+	}
+}
+
+.feature-item__title {
+	line-height: 34px;
+	margin-bottom: 0;
+	font-size: 22px;
+	color: #000;
+}
+
+@media only screen and (min-width:768px) {
+	.feature-item__title {
+		width: 312px;
+	}
+}
+
+.feature-item__text {
+	margin-top: 15px;
+}
+
+@media only screen and (min-width:768px) {
+	.feature-item__text {
+		margin-top: 30px;
+	}
+}
+
+.feature-item__text:last-of-type {
+	margin-bottom: 0;
+}
+
+.feature-item__img {
+	height: 350px;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+@media only screen and (min-width:768px) {
+	.feature-item__img {
+		margin-bottom: 0px;
+	}
+}
+
+.feature-item:nth-of-type(even) .row {
+	flex-direction: column-reverse;
+}
+
+@media only screen and (min-width:768px) {
+	.feature-item:nth-of-type(even) .row {
+		flex-direction: row-reverse;
+	}
+}
+
+@media only screen and (min-width:992px) {
+	.feature-item:nth-of-type(even) .row {
+		flex-direction: row;
+	}
+}
